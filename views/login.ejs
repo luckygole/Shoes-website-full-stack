@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="main">
+
+    <button id="switch">Already account <i class="fa-solid fa-circle-user"></i></button>    
+    <a href="http://localhost:8000/">back<i class="fa-solid fa-arrow-right"></i></a> 
+
+    <form action="/new" method="POST" class="create">
+        <h1>Create Account</h1>
+        <input name="username" type="text"  placeholder="enter usernmae" required /><br>
+        <input name="email" type="email" placeholder="enter email" required/><br>
+        <input name="password" type="password" placeholder="enter password" required /><br>
+        <button class="submit">Submit</button><br>
+        <a href="#">Forget password?</a>
+    </form>
+
+    <form action="/already" method="POST" class="login">
+        <h1>Login</h1>
+        <input name="username" type="text"  placeholder="enter usernmae" required /><br>
+        <input name="password" type="password" placeholder="enter password" required /><br>
+        <button class="">Login</button><br>
+        <a href="#">Forget password?</a>
+    </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+</html>
